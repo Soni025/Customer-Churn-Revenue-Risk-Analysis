@@ -160,8 +160,6 @@ pip install numpy pandas matplotlib seaborn jupyter openpyxl
 jupyter notebook churn_analysis.ipynb
 ```
 
-> The notebook upload contains the analysis code, but the database and Excel source files were not included with it. Add the appropriate source file before running the complete workflow.
-
 ---
 
 ## Example: Reproducing Contract-Level Churn
@@ -205,22 +203,8 @@ The analysis can help a business prioritise follow-up actions:
 
 These are analysis-led opportunities, not proof of causation. The correlation between escalations and churn should be treated as an association and investigated further.
 
----
 
-## Repository Structure
-
-```text
-.
-├── churn_analysis.ipynb       # End-to-end analysis notebook
-├── customer_churn.db          # SQLite database (add source data)
-├── customer_churn_data_raw.xlsx  # Optional raw Excel source
-├── exported_churn_data.csv    # Generated cleaned dataset
-└── README.md
-```
-
----
-
-## Limitations & Next Steps
+## Future Scope
 
 - The notebook's saved outputs represent a small working dataset; validate all headline metrics on the complete dataset before making operational decisions.
 - Correlation does not establish causation.
